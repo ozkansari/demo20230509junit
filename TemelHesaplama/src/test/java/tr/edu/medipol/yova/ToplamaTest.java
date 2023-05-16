@@ -16,7 +16,7 @@ public class ToplamaTest {
 		int gercekSonuc = Toplama.islemYap(sayi1, sayi2);
 		
 		// THEN - KONTROL / VALIDASYON
-		assertEquals("Sonuc 1 olmaliydi", 1, gercekSonuc);
+		assertEquals("Sonuc hatali, 1 olmaliydi", 1, gercekSonuc);
 	}
 	
 	@Test
