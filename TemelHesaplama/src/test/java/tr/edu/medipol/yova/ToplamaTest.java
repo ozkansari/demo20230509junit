@@ -16,7 +16,7 @@ public class ToplamaTest {
 		int gercekSonuc = Toplama.islemYap(sayi1, sayi2);
 		
 		// THEN - KONTROL / VALIDASYON
-		assertEquals("Sonuc hatali, 1 olmaliydi. Duzeldi.", 1, gercekSonuc);
+		assertEquals("Sonuc hatali, 1 olmaliydi.", 1, gercekSonuc);
 	}
 	
 	@Test
@@ -43,6 +43,19 @@ public class ToplamaTest {
 		
 		// THEN - KONTROL / VALIDASYON
 		assertEquals(-100, gercekSonuc);
+	}
+	
+	@Test
+	public void testToplaBuyukSayi() {
+		// GIVEN - ONKOSULLAR
+		int sayi1 = 99999;
+		int sayi2 = 10001;
+		
+		// WHEN - ASIL TEST
+		int gercekSonuc = Toplama.islemYap(sayi1, sayi2);
+		
+		// THEN - KONTROL / VALIDASYON
+		assertEquals(110000, gercekSonuc);
 	}
 
 }
